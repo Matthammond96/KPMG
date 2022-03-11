@@ -34,7 +34,8 @@ function update_in_nested_array (nestedArray, instruction) {
   return false
 }
 
-function create_tree_from_array (arrInput) {
+
+module.exports = function (arrInput) {
   // Guard against invaild arrays and empty arrays (could throw new Error() instead of returning output)
   if(!arrInput || (typeof arrInput !== "object" && !Array.isArray(arrInput)) || arrInput.length === 0) return []
 
@@ -63,8 +64,4 @@ function create_tree_from_array (arrInput) {
   }
   
   return output
-}
-
-module.exports = {
-  create_tree_from_array
 }

@@ -1,4 +1,4 @@
-const { create_tree_from_array } = require('./tree_function')
+const create_tree_from_array = require('../tree_function')
 
 // Implamented a simpme testing framework to check for varible results and prevent errors, typically would use a testing lib such as JEST to describe actions and outputs
 
