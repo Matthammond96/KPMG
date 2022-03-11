@@ -16,8 +16,8 @@ The only way to run the function is by running the test file using the node comm
 
 ### Current Known Bugs & Refactoring Todo's ###
 
-* Remove the need for `output` varible and tree `varible` as this will be done in one nested re-occuring loop
-* Child nodes are not yet ordered according to `previousSiblingId`
-* Merge all parent and sibling instructions into single re-occuring loop: `update_in_nested_array()`
+* [RESOLVED] - Child nodes are not yet ordered according to `previousSiblingId`
+* [RESOLVED] - Merge all parent and sibling instructions into single re-occuring loop: `update_in_nested_array()`
 * Create node-js file system opener for KPMG to add input / inputs file through command line
 * Write result to `./output/output.json`
+* Refactor instructions code to simplify instructions

@@ -1,6 +1,6 @@
 const { create_tree_from_array } = require('./tree_function')
 
-// Implamented a simpme testing framework to check for varible results and prevent errors
+// Implamented a simpme testing framework to check for varible results and prevent errors, typically would use a testing lib such as JEST to describe actions and outputs
 
 const test_lib = () => {
   let error_count = 0
@@ -228,6 +228,9 @@ const test_lib = () => {
       error_count++
     }
   })
+
+  // const result = create_tree_from_array(test_scenarios[4].input)
+  // console.log(JSON.stringify(result))
 
   console.log(`Test completed with ${error_count} errors`)
 }
